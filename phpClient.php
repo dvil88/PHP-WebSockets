@@ -72,7 +72,7 @@ elseif($socket != null){
 	var_dump($msg['payloadData']);
 }
 
-$a = encode('8el1CE50');
+$a = encode('SUPERSECUREPW');
 $b = fwrite($socket, $a,strlen($a));
 $buffer = fread($socket, 8192);
 if($buffer === false){ echo 'ERROR!',PHP_EOL;fclose($socket);exit; }
